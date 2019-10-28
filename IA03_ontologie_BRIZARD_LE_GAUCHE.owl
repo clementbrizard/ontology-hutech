@@ -1,0 +1,2069 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#"
+     xml:base="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-10="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#aEcrit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#aEcrit">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estEcritPar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Auteur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Ressource"/>
+        <dc:description xml:lang="fr">Relation liant une un auteur à une ressource : un auteur a écrit une ou plusieurs ressources.</dc:description>
+        <rdfs:label xml:lang="fr">aEcrit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#caracterise -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#caracterise">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estCaracterisePar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Ressource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+        <dc:description xml:lang="fr">Relation liant une ressource à un concept HuTech : une ressource caractérise un ou des concetps HuTech.</dc:description>
+        <rdfs:label xml:lang="fr">caracterise</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#concoit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#concoit">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estConcuPar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Auteur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+        <dc:description xml:lang="fr">Relation liant un auteur à un concept HuTech : un auteur conçoit un ou des concepts HuTech.</dc:description>
+        <rdfs:label xml:lang="fr">concoit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#construit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#construit">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#concoit"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estConstruitPar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConstructCOP"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOp"/>
+        <dc:description xml:lang="fr">Relation liant un constructeur de concepts opérationnels (qui est un auteur) à un concept opérationnel (qui est un concept HuTech) : un constructeur de concepts opérationnels construit un ou des concepts opérationnels.</dc:description>
+        <rdfs:label xml:lang="fr">construit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#contient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#contient">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#caracterise"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estContenuDans"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+        <dc:description xml:lang="fr">Relation liant un livre (qui est une ressource) à un concept HuTech : un livre contient un ou des concetps HuTech. Cette relation spécialise la relation &quot;caracterise&quot;.</dc:description>
+        <rdfs:label xml:lang="fr">contient</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estCaracterisePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estCaracterisePar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Ressource"/>
+        <dc:description xml:lang="fr">Relation liant un concept HuTech à une ressource : un concept HuTech est caractérisé par une ou des ressources HuTech.</dc:description>
+        <rdfs:label xml:lang="fr">estCaracterisePar</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estComprisGraceA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estComprisGraceA">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estNecessPourCompre"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+        <dc:description xml:lang="fr">Relation liant un concept HuTech à un autre en spécifiant que le premier est compris grâce au second.</dc:description>
+        <rdfs:label xml:lang="fr">estComprisGraceA</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estConcuPar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estConcuPar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Auteur"/>
+        <dc:description xml:lang="fr">Relation liant un concept HuTech à un auteur : un concept HuTech est conçu par un ou des auteurs.</dc:description>
+        <rdfs:label xml:lang="fr">estConcuPar</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estConstruitPar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estConstruitPar">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estConcuPar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConstructCOP"/>
+        <dc:description xml:lang="fr">Relation liant un concept opérationnel (qui est un concept HuTech) à un constructeur de concepts opérationnels (qui est un auteur) : un concept opérationnel est construit par un ou des constructeurs de concepts opérationnels. Cette relation spécialise la relation &quot;est conçu par&quot;.</dc:description>
+        <rdfs:label xml:lang="fr">estConstruitPar</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estContenuDans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estContenuDans">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estCaracterisePar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre"/>
+        <dc:description xml:lang="fr">Relation liant un concept HuTech à un livre (qui est une ressource) : un concept HuTech est contenu dans un ou des livres. Cette relation spécialise la relation &quot;est caractérisé par&quot;.</dc:description>
+        <rdfs:label xml:lang="fr">estContenuDans</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estEcritPar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estEcritPar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Ressource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Auteur"/>
+        <dc:description xml:lang="fr">Relation liant une ressource à un auteur : une ressource est ecrite par un ou plusieurs auteurs.</dc:description>
+        <rdfs:label xml:lang="fr">estEcritPar</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estNecessPourCompre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estNecessPourCompre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+        <rdfs:isDefinedBy xml:lang="fr">Relation liant un concept HuTech à un autre en spécifiant que le premier est nécessaire pour comprendre le second.</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estOpposeA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estOpposeA">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+        <rdfs:isDefinedBy xml:lang="pt">Relaint liant deux concepts HuTech entre eux en spécifiant qu&apos;ils sont opposés l&apos;un à l&apos;autre.</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estPensePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estPensePar">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estConcuPar"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#pense"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Penseur"/>
+        <dc:description xml:lang="fr">Relation liant un concept HuTech à un penseur (qui est un auteur) : un concept HuTech est pensé par un ou des penseurs. Cette relation spécialise la relation &quot;est conçu par&quot;.</dc:description>
+        <rdfs:label xml:lang="fr">estPensePar</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estPresenteDans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estPresenteDans">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estCaracterisePar"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#presente"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOp"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FicheSUSHI"/>
+        <dc:description xml:lang="fr">Relation liant un concept opérationnel (qui est un concept HuTech) à une fiche SUSHI (qui est une ressource) : un concept opérationnel est présenté dans une fiche SUSHI. Cette relation spécialise la relation &quot;est caractérisé par&quot;.</dc:description>
+        <rdfs:label xml:lang="fr">estPresenteDans</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estResumeDans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estResumeDans">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estCaracterisePar"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#resume"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#CompteRenduCours"/>
+        <dc:description xml:lang="fr">Relation liant un concept HuTech à un compte-rendu de cours (qui est une ressource) : un concept HuTech est résumé dans un ou des comptes-rendus de cours. Cette relation spécialise la relation &quot;est caractérisé par&quot;.</dc:description>
+        <rdfs:label xml:lang="fr">estResumeDans</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#pense -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#pense">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#concoit"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Penseur"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+        <dc:description xml:lang="fr">Relation liant un penseur (qui est un auteur) à un concept HuTech : un penseur pense un ou des concepts HuTechs. Cette relation spécialise la relation &quot;conçoit&quot;.</dc:description>
+        <rdfs:label xml:lang="fr">pense</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#presente -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#presente">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#caracterise"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FicheSUSHI"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOp"/>
+        <dc:description xml:lang="fr">Relation liant une Fiche SUSHI (qui est une ressource) à un concept opérationnel : une Fiche SUSHI présente un concept opérationnel. Cette relation spécialise la relation &quot;caracterise&quot;.</dc:description>
+        <rdfs:label xml:lang="fr">presente</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#resume -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#resume">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#caracterise"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#CompteRenduCours"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+        <dc:description xml:lang="fr">Relation liant un compte-rendu de cours (qui est une ressource) à un concept HuTech : un compte-rendu de cours résume un ou des concepts HuTech. Cette relation spécialise la relation &quot;caracterise&quot;.</dc:description>
+        <rdfs:label xml:lang="fr">resume</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#aPourObjectif -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#aPourObjectif">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOp"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy xml:lang="fr">Relation liant un concept opérationnel à une chaîne de caractères décrivant l&apos;objectif général de son utilisation, quel qu&apos;en soit le contexte précis.</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#aPourTitre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#aPourTitre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy xml:lang="fr">Relation liant un livre à une chaîne de caractère étant son titre.</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estAccessibleA -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estAccessibleA">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estLieA"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Ressource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="fr">Relation liant une ressource et le lien via lequel la ressource est accessible.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estDefiniPar -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estDefiniPar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy xml:lang="fr">Relation liant un concept HuTech à une chaîne de caractères qui le définit.</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estLieA -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estLieA">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Auteur"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Ressource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:isDefinedBy xml:lang="fr">Relation liant un concept de l&apos;ontologie à un lien vers une ressource documentaire extérieure à l&apos;ontologie.</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePour -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePour">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOp"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy xml:lang="fr">Relation liant un concept opérationel à une chaîne de caractères décrivant l&apos;effet escompté lors de son utilisation.</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePourAnalyse -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePourAnalyse">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePour"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpAnalyse"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy xml:lang="fr">Relation liant un concept opérationnel pouvant être utilisé en contexte d&apos;analyse à une chaîne de caractères décrivant l&apos;effet escompté lors de son utilisation, dans ce contexte d&apos;analyse. Cette relation spécialise la relation &quot;est utilisé pour&quot;.</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePourInvention -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePourInvention">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePour"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpInvent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy xml:lang="fr">Relation liant un concept opérationnel pouvant être utilisé en contexte d&apos;invention à une chaîne de caractères décrivant l&apos;effet escompté lors de son utilisation, dans ce contexte d&apos;invention. Cette relation spécialise la relation &quot;est utilisé pour&quot;.</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePourPrise -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePourPrise">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePour"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpPrise"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy xml:lang="fr">Relation liant un concept opérationnel pouvant être utilisé en contexte de prise en charge à une chaîne de caractères décrivant l&apos;effet escompté lors de son utilisation, dans ce contexte de prise en charge. Cette relation spécialise la relation &quot;est utilisé pour&quot;.</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePourProbl -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePourProbl">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePour"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpProbl"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy xml:lang="fr">Relation liant un concept opérationnel pouvant être utilisé en contexte de problématisation à une chaîne de caractères décrivant l&apos;effet escompté lors de son utilisation, dans ce contexte de problématisation.  Cette relation spécialise la relation &quot;est utilisé pour&quot;.</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePourResti -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePourResti">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePour"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpResti"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy xml:lang="fr">Relation liant un concept opérationnel pouvant être utilisé en contexte de restitution à une chaîne de caractères décrivant l&apos;effet escompté lors de son utilisation, dans ce contexte de restitution. Cette relation spécialise la relation &quot;est utilisé pour&quot;.</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#paruEn -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#paruEn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+        <rdfs:isDefinedBy xml:lang="fr">Relation liant un livre à un entier étant sa date de parution.</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#pourAllerPlusLoin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#pourAllerPlusLoin">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estLieA"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:isDefinedBy xml:lang="fr">Relation liant un concept HuTech à un lien vers une ressoure extérieure à l&apos;ontologie (un document PDF, un URL par exemple).</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Anthropologue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Anthropologue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Penseur"/>
+        <dc:description xml:lang="fr">Un anthropologue est un penseur issu de l&apos;anthropologie.</dc:description>
+        <rdfs:label>Anthropologue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Auteur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Auteur">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#aEcrit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Ressource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#concoit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estLieA"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+        <dc:description xml:lang="fr">Un auteur est une personne ayant conçu conçu un ou plusieurs concepts HuTech.</dc:description>
+        <rdfs:label>Auteur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#CompteRenduCours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#CompteRenduCours">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Ressource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#resume"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="fr">Un compte rendu de cours est une ressource qui résume un concept HuTech.</dc:description>
+        <rdfs:label>CompteRenduCours</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOp"/>
+        <dc:description xml:lang="fr">Concept constituant la base théorique propre au cursus HuTech, sous-tendant les concepts opérationels.</dc:description>
+        <rdfs:label>ConceptArrierePlan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estCaracterisePar"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Ressource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estComprisGraceA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estConcuPar"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Auteur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estContenuDans"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estNecessPourCompre"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estOpposeA"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estPensePar"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Penseur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estResumeDans"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#CompteRenduCours"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estDefiniPar"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estLieA"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#pourAllerPlusLoin"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="fr">Elément théorique de base constituant le regard spécifique d&apos;un ingénieur HuTech.</dc:description>
+        <rdfs:label>ConceptHutech</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estConstruitPar"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConstructCOP"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estPresenteDans"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FicheSUSHI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#aPourObjectif"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePour"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="fr">Concept pouvant être directement mobilisé en situation d&apos;ingénieur.</dc:description>
+        <rdfs:label>ConceptOp</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpAnalyse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpAnalyse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOp"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePourAnalyse"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="fr">Concept pouvant directement être mobilisé en situation d&apos;analyse : voir ce qui est, voir l&apos;existant.</dc:description>
+        <rdfs:label>ConceptOpAnalyse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpInvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpInvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOp"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePourInvention"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="fr">Concept pouvant directement être mobilisé en situation d&apos;invention : voir ce qui pourrait être, de l&apos;idée à l&apos;élaboration de solutions réalisables.</dc:description>
+        <rdfs:label>ConceptOpInvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpPrise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpPrise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOp"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePourPrise"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="fr">Concept pouvant directement être mobilisé en situation de prise en charge : écouter, entendre et reformuler le dit et non-dit de la demande. Elaborer cette demande en commande pour l&apos;étude en proposition d&apos;intervention.</dc:description>
+        <rdfs:label>ConceptOpPrise</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpProbl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpProbl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOp"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePourProbl"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="fr">Concept pouvant directement être mobilisé en situation de problématisation : voir et synthétiser ce qui pose problème.</dc:description>
+        <rdfs:label>ConceptOpProbl</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpResti -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpResti">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOp"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estUtilisePourResti"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="fr">Concept pouvant directement être mobilisé en situation de restitution : présenter les résultats, aider à décider.</dc:description>
+        <rdfs:label>ConceptOpResti</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConstructCOP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConstructCOP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Auteur"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#construit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="fr">Un constructeur de concepts opérationnels est un auteur ayant construit un ou plusieurs concepts opérationnels.</dc:description>
+        <rdfs:label>ConstructCOP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Economiste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Economiste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Penseur"/>
+        <dc:description xml:lang="fr">Un économiste est un penseur issu de l&apos;économie.</dc:description>
+        <rdfs:label>Economiste</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Ethnologue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Ethnologue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Penseur"/>
+        <dc:description xml:lang="fr">Un éthnologue est un penseur issu de l&apos;ethnologie.</dc:description>
+        <rdfs:label>Ethnologue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FicheSUSHI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FicheSUSHI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Ressource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#presente"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="fr">Une fiche SUSHI (Sorbonne Universités pour les sciences humaines de l&apos;ingénieur) est une ressource qui présente un concept opérationnel.</dc:description>
+        <rdfs:label>FicheSUSHI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Historien -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Historien">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Penseur"/>
+        <dc:description xml:lang="fr">Un historien est un penseur issu de l&apos;histoire.</dc:description>
+        <rdfs:label>Historien</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Informaticien -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Informaticien">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Penseur"/>
+        <dc:description xml:lang="fr">Un informaticien est un penseur issu de l&apos;informatique.</dc:description>
+        <rdfs:label>Informaticien</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#IngenieurAnalyseFct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#IngenieurAnalyseFct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Penseur"/>
+        <dc:description xml:lang="fr">Un ingénieur analyste fonctionnel est un penseur issu de l&apos;analyse fonctionnelle.</dc:description>
+        <rdfs:label>IngenieurAnalyseFct</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Linguiste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Linguiste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Penseur"/>
+        <dc:description xml:lang="fr">Un linguiste est un penseur issu de linguistique.</dc:description>
+        <rdfs:label>Linguiste</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Ressource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#contient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#aPourTitre"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#paruEn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="fr">Un livre est une ressource qui contient un concept HuTech.</dc:description>
+        <rdfs:label>Livre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Penseur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Penseur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Auteur"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#pense"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="fr">Un penseur est un auteur ayant pensé un ou plusieur concept HuTech.</dc:description>
+        <rdfs:label>Penseur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Philosophe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Philosophe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Penseur"/>
+        <dc:description xml:lang="fr">Un philosophe est un penseur issu de la philosophie.</dc:description>
+        <rdfs:label>Philosophe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Psychologue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Psychologue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Penseur"/>
+        <dc:description xml:lang="fr">Un psychologue est un penseur issu de la psychologie.</dc:description>
+        <rdfs:label>Psychologue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Ressource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Ressource">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#caracterise"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estEcritPar"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Auteur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estAccessibleA"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#estLieA"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="fr">Une ressource est un document qui caractérise un concept HuTech.</dc:description>
+        <rdfs:label>Ressource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Sociologue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Sociologue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Penseur"/>
+        <dc:description xml:lang="fr">Un sociologue est un penseur issu de la sociologie.</dc:description>
+        <rdfs:label>Sociologue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#AlainGras -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#AlainGras">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Sociologue"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LesMacroSystTech"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#MacroSystemeTech"/>
+        <rdfs:label xml:lang="fr">AlainGras</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#AmericanGen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#AmericanGen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre"/>
+        <contient rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Momentum"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ThomasParkeHughes"/>
+        <aPourTitre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amerian Genesis : A Century of Invention and Technological Enthusiasm, 1870-1970</aPourTitre>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.press.uchicago.edu/ucp/books/book/chicago/A/bo3627102.html</estAccessibleA>
+        <paruEn rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">1989</paruEn>
+        <rdfs:label xml:lang="fr">AmericanGen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#AndreLeroiGourhan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#AndreLeroiGourhan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Ethnologue"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#HommeMatiere"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#TendanceFaits"/>
+        <rdfs:label xml:lang="fr">AndreLeroiGourhan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Artisanat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Artisanat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Technique"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L&apos;artisanat regroupe les activités productives mobilisant des savoir-faire informels et des outils. Il est l&apos;illustration de la technique.</estDefiniPar>
+        <rdfs:label xml:lang="fr">Artisanat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#AutoChoixTech -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#AutoChoixTech">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SystemeTech"/>
+        <estContenuDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#TechEnjeuSiecle"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#BluffTechnologique"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#JacquesEllul"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L&apos;automatisme du choix technique désigne l&apos;état d&apos;un système technique donné qui rend indispensable l&apos;utilisation d&apos;une nouvelle technique.</estDefiniPar>
+        <rdfs:label xml:lang="fr">AutomatismeDuChoixTechnique</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#BernardStiegler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#BernardStiegler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Philosophe"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#MecreanceDiscred"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Grammatisation"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Proletarisation"/>
+        <rdfs:label xml:lang="fr">BernardStiegler</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#BertrandGille -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#BertrandGille">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Historien"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ProlegoHistTechn"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#DesajustementTK"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SystemeTech"/>
+        <rdfs:label xml:lang="fr">BertrandGille</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#BluffTechnologique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#BluffTechnologique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpInvent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpPrise"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpProbl"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#AutoChoixTech"/>
+        <estContenuDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LeBluffTechno"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#JacquesEllul"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Technologique est ici à entendre au sens étymologique du discours sur la technique. Il s&apos;agit d&apos;un discours ambiant nous amenant à croire que la solution à nos problèmes est nécéssairement technologique. La technologie est systématiquement choisie sans être questionnée. Ce discours accompagne l&apos;automatisme du choix technique.</estDefiniPar>
+        <rdfs:label xml:lang="fr">BluffTechnologique</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ChristopheDejours -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ChristopheDejours">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Psychologue"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#TravailVivant"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#EcartPrescritReel"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FinalOrgaCollTrav"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FonctionsDuTravailler"/>
+        <rdfs:label xml:lang="fr">ChristopheDejours</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Chronodynamisme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Chronodynamisme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Mediasphère"/>
+        <estContenuDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#CoursMedioGen"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#RegisDebray"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adéquation entre la forme temporelle d’un phénomène et le milieu (la « vitesse ») d’une médiasphère : plus un phénomène est chronodynamique, plus il est pénétrant au sein d’une médiasphère donnée. Par exemple, un TED talk s&apos;intègre davantage dans l&apos;hypershpère que Shoah de Claude Lanzmann qui dure neuf heures.</estDefiniPar>
+        <rdfs:label xml:lang="fr">Chronodynamisme</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConatusInstitu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConatusInstitu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#InertiesLeviers"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Spinoza"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le conatus institutionnel est le fait pour une institution de privilégier sa logique et sa pérennisation aux finalités ayant présidées à sa naissance. Issu du conatus selon Spinoza qui désgine l&apos;effort de toute chose existante à persévérer dans son être.</estDefiniPar>
+        <rdfs:label xml:lang="fr">ConatusInstitutionnel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Concretisation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Concretisation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpAnalyse"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpInvent"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasPonchaut"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasSalzmann"/>
+        <estContenuDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ModeExistObjTech"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GilbertSimondon"/>
+        <estPresenteDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIConcreTechn"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Processus de synergisation progressive entre des éléments auparavant fonctionnellement et matériellement disjoints. Un objet technique &quot;abstrait&quot; possède des composants juxtaposés qui réalisent séparément leur fonction. Un objet concret voit ses composants coopéreer et s&apos;intégrer mutuellement.</estDefiniPar>
+        <rdfs:label xml:lang="fr">Concretisation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#CoursMedioGen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#CoursMedioGen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre"/>
+        <contient rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Chronodynamisme"/>
+        <contient rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#EffetJogging"/>
+        <contient rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Mediasphère"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#RegisDebray"/>
+        <aPourTitre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cours de médiologie générale</aPourTitre>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.gallimard.fr/Catalogue/GALLIMARD/Bibliotheque-des-Idees/Cours-de-mediologie-generale</estAccessibleA>
+        <paruEn rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">1991</paruEn>
+        <rdfs:label xml:lang="fr">CoursMedioGen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#DesajustementTK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#DesajustementTK">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan"/>
+        <estContenuDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ProlegoHistTechn"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#BertrandGille"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phénomène produit par une transformation technique à la suite de laquelle les pratiques sociales (culturelles, juridiques, politiques, etc.) ne sont plus en adéquation, voire deviennent incompatibles, avec les bases matérielles d’une société. Ex : le niveau de développement actuel des réseaux sociaux a rendu inadapté la loi informatique et libertés de 1978, d&apos;où la récente RGPD européenne.</estDefiniPar>
+        <rdfs:label xml:lang="fr">DesajustementTechnique</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#DispositifSocioTechnique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#DispositifSocioTechnique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpAnalyse"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpInvent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpPrise"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpProbl"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpResti"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#MacroSystemeTech"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SystemeTech"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasPonchaut"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasSalzmann"/>
+        <estPresenteDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSHUSHIDST"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Système d&apos;éléments techniques considérés en tant que supports (moyens et lieux) non-neutres pour des activités humaines.</estDefiniPar>
+        <rdfs:label xml:lang="fr">DispositifSocioTechnique</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#EcartPrescritReel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#EcartPrescritReel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpAnalyse"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpResti"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasPonchaut"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasSalzmann"/>
+        <estContenuDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#TravailVivant"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FonctionsDuTravailler"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ChristopheDejours"/>
+        <estPresenteDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIEcartPrescritReel"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ecart irréductible entre le travail prescrit (par la hiérachie, par les techniques) et le travail effectif, réel. Le réel résiste à notre maîtrise.</estDefiniPar>
+        <rdfs:label xml:lang="fr">EcartPrescritReel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#EffetJogging -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#EffetJogging">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan"/>
+        <estContenuDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#CoursMedioGen"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#RegisDebray"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Debray : &quot;chaque tendance sucscite sa contre-tendance compensatoire, boomerang que j&apos;ai appelé effet jogging&quot;. Le développement des voitures a fait naître le fait d&apos;aller courrir juste pour courrir : le jogging.</estDefiniPar>
+        <rdfs:label xml:lang="fr">EffetJogging</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Exaptation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Exaptation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Technique"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Transduction"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#RaffaeleSimone"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contraire de l&apos;adaptation (la fonction crée l&apos;organe). Désigne l&apos;évolution d&apos;un caractère doté d&apos;un fonction première, vers un carcatère jouant un tout autre rôle (l&apos;organe crée la fonction). Ex : les plumes de oiseaux inatialement pour le thermorégulation du corps, puis pour le vole. L&apos;ordinateur initialement pour faire du calcul, puis pour, par exemple, communiquer ou consigner des recettes de cuisine. On peut voir la transduction Homme-Technique comme une alternance entre adaptation et exaptation.</estDefiniPar>
+        <rdfs:label xml:lang="fr">Exaptation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSHUSHIDST -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSHUSHIDST">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FicheSUSHI"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasPonchaut"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasSalzmann"/>
+        <presente rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#DispositifSocioTechnique"/>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://drive.google.com/drive/folders/1p7wRAcK9FX23ibwl6Snc7Dn6_O0LVb2V</estAccessibleA>
+        <rdfs:label xml:lang="fr">FSUSHIDST</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIConcreTechn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIConcreTechn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FicheSUSHI"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasPonchaut"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasSalzmann"/>
+        <presente rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Concretisation"/>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://drive.google.com/drive/folders/1p7wRAcK9FX23ibwl6Snc7Dn6_O0LVb2V</estAccessibleA>
+        <rdfs:label xml:lang="fr">FSUSHIConcreTechn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIEcartPrescritReel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIEcartPrescritReel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FicheSUSHI"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasPonchaut"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasSalzmann"/>
+        <presente rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#EcartPrescritReel"/>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://drive.google.com/drive/folders/1p7wRAcK9FX23ibwl6Snc7Dn6_O0LVb2V</estAccessibleA>
+        <rdfs:label xml:lang="fr">FSUSHIEcartPrescritReel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIFctTravailler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIFctTravailler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FicheSUSHI"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasPonchaut"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasSalzmann"/>
+        <presente rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FonctionsDuTravailler"/>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://drive.google.com/drive/folders/1p7wRAcK9FX23ibwl6Snc7Dn6_O0LVb2V</estAccessibleA>
+        <rdfs:label xml:lang="fr">FSUSHIFctTravailler</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIFinOrgaColTrav -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIFinOrgaColTrav">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FicheSUSHI"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasPonchaut"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasSalzmann"/>
+        <presente rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FinalOrgaCollTrav"/>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://drive.google.com/drive/folders/1p7wRAcK9FX23ibwl6Snc7Dn6_O0LVb2V</estAccessibleA>
+        <rdfs:label xml:lang="fr">FSUSHIFinOrgaCollTrav</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIInertiesLeviers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIInertiesLeviers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FicheSUSHI"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasPonchaut"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasSalzmann"/>
+        <presente rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#InertiesLeviers"/>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://drive.google.com/drive/folders/1p7wRAcK9FX23ibwl6Snc7Dn6_O0LVb2V</estAccessibleA>
+        <rdfs:label xml:lang="fr">FSUSHIInertiesLeviers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIProletari -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIProletari">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FicheSUSHI"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasPonchaut"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasSalzmann"/>
+        <presente rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Proletarisation"/>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://drive.google.com/drive/folders/1p7wRAcK9FX23ibwl6Snc7Dn6_O0LVb2V</estAccessibleA>
+        <rdfs:label xml:lang="fr">FSUSHIProletari</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHISourcesPrescr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHISourcesPrescr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FicheSUSHI"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasPonchaut"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasSalzmann"/>
+        <presente rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SourcesPrescription"/>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://drive.google.com/drive/folders/1p7wRAcK9FX23ibwl6Snc7Dn6_O0LVb2V</estAccessibleA>
+        <rdfs:label xml:lang="fr">FSUSHISourcesPrescr</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHITendanceFaits -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHITendanceFaits">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FicheSUSHI"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasPonchaut"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasSalzmann"/>
+        <presente rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#TendanceFaits"/>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://drive.google.com/drive/folders/1p7wRAcK9FX23ibwl6Snc7Dn6_O0LVb2V</estAccessibleA>
+        <rdfs:label xml:lang="fr">FSUSHITendanceFaits</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FinalOrgaCollTrav -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FinalOrgaCollTrav">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpAnalyse"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpInvent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpProbl"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpResti"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasPonchaut"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasSalzmann"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ChristopheDejours"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#MariePeze"/>
+        <estPresenteDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIFinOrgaColTrav"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Finalités et organisation d&apos;un collectif de travail - Cet outils permet de lever l&apos;opacité sur l&apos;utilité du travail d&apos;un collectif en décrivant non seulement comment on fait mais aussi pour quoi on le fait. Les travailleurs peuvent ansi retrouver et discuter entre eux de la stratégie à laquelle ils contribue (finalirés) et des tactiques adoptées (organisation, moyens).</estDefiniPar>
+        <rdfs:label xml:lang="fr">FinalitesEtOrgaDunCollectifDeTravail</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FonctionsDuTravailler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FonctionsDuTravailler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpAnalyse"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpInvent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpProbl"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpResti"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#EcartPrescritReel"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Individuation"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasPonchaut"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasSalzmann"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ChristopheDejours"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#MariePeze"/>
+        <estPresenteDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIFctTravailler"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le travail doit permettre à l&apos;individu une individuation personnelle, une individuation sociale au sein d&apos;un collectif de travail et une individuation sociale globale. Ces individuations se réalisent au sein de l&apos;écart prescrit-réel.</estDefiniPar>
+        <rdfs:label xml:lang="fr">FonctionsDuTravailler</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GilbertSimondon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GilbertSimondon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Philosophe"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#IndiviInfosForme"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ModeExistObjTech"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Concretisation"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Individuation"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Transduction"/>
+        <rdfs:label xml:lang="fr">GilbertSimondon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Grammatisation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Grammatisation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Industrialisation"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Proletarisation"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#BernardStiegler"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SylvainAuroux"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La grammatisation désigne le passage d&apos;un continu temporel à un discret spatial ; c’est un processus de description, de formalisation et de discrétisation des comportements humains (calculs, langages et gestes) qui permet leur reproductibilité. Un exemple : le passage des savoir-faire informels artisanaux aux procédés industriels mathématisés, formalisés.</estDefiniPar>
+        <pourAllerPlusLoin rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://arsindustrialis.org/grammatisation</pourAllerPlusLoin>
+        <rdfs:label xml:lang="fr">Grammatisation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConstructCOP"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Historien"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSHUSHIDST"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIConcreTechn"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIEcartPrescritReel"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIFctTravailler"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIFinOrgaColTrav"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIInertiesLeviers"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIProletari"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHISourcesPrescr"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHITendanceFaits"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LesLudditesEnFr"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Concretisation"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#DispositifSocioTechnique"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#EcartPrescritReel"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FinalOrgaCollTrav"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FonctionsDuTravailler"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#InertiesLeviers"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Proletarisation"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SourcesPrescription"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#TendanceFaits"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Technique"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Technologie"/>
+        <rdfs:label xml:lang="fr">GuillaumeCarnino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Habitus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Habitus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#InertiesLeviers"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#PierreBourdieu"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adptitude socio-individuelle acquise (souvent inconsciemment) et pourtant adaptée/réinventée chaque fois qu&apos;elle est mobilisée dans des rapports sociaux. Combinaison de l&apos;ethos (morale incorporée inconsciemment) et de l&apos;hexis (diposition corporelle/conportementale de même sorte).</estDefiniPar>
+        <rdfs:label xml:lang="fr">Habitus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#HommeMatiere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#HommeMatiere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre"/>
+        <contient rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#TendanceFaits"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#AndreLeroiGourhan"/>
+        <aPourTitre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L&apos;Homme et la matière</aPourTitre>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.albin-michel.fr/ouvrages/lhomme-et-la-matiere-9782226062130</estAccessibleA>
+        <paruEn rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">1943</paruEn>
+        <rdfs:label xml:lang="fr">HommeMatiere</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#IndiviInfosForme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#IndiviInfosForme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre"/>
+        <contient rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Individuation"/>
+        <contient rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Transduction"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GilbertSimondon"/>
+        <aPourTitre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L&apos;individuation à la lumière des notions de forme et d&apos;information</aPourTitre>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.millon.fr/livres/201-philosophie-krisis-simondon-gilbert-l-individuation-a-la-lumiere-des-notions-de-forme-et-d-information.html</estAccessibleA>
+        <paruEn rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">2012</paruEn>
+        <rdfs:label xml:lang="fr">IndivInfosForme</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Individuation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Individuation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan"/>
+        <estContenuDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#IndiviInfosForme"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FonctionsDuTravailler"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GilbertSimondon"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genèse d’un individu, étudié non pas comme achevé mais comme en devenir. C&apos;est la relation qui fait advenir l&apos;existant. L&apos;individu est toujours en devenir.</estDefiniPar>
+        <rdfs:label xml:lang="fr">Individuation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Industrialisation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Industrialisation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Grammatisation"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#MacroSystemeTech"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SystemeTech"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Technique"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Technologie"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L&apos;industrialisation désigne le passage de la technique à la technologie. Les systèmes techniques deviennent des macro-systèmes techniques. C&apos;est le procesus de rationalisation, de grammatisation, de mise en science par l&apos;ingénieur et d&apos;intégration progressice des activités humaines dans des machines : les outils deviennent des machines, les savoir-faire, des procédés industriels.</estDefiniPar>
+        <rdfs:label xml:lang="fr">Industrialisation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#InertiesLeviers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#InertiesLeviers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpAnalyse"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpProbl"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConatusInstitu"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Habitus"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LockIn"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Momentum"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasPonchaut"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasSalzmann"/>
+        <estPresenteDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIInertiesLeviers"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Les inerties et leviers désignent les forces inhérentes à un dispositif socio-technique qui vont s&apos;avérer favorables (leviers) ou défavorables (inerties) pour le changement que l&apos;on voudrait mettre en place. Ces forces peuvent être de différentes natures : technique et social (habitus), technique et économique, technique et juridique (jurisprudence), technique et politique (conatus institutionnel), technique et industriel (lock-in, momentum).</estDefiniPar>
+        <rdfs:label xml:lang="fr">InertiesLeviers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#IvanIllich -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#IvanIllich">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Philosophe"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NemesisMedi"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SeuilContreProd"/>
+        <rdfs:label xml:lang="fr">IvanIllich</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#JackGoody -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#JackGoody">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Anthropologue"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LaRaisonGraph"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#RaisonGraphique"/>
+        <rdfs:label xml:lang="fr">JackGoody</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#JacquesEllul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#JacquesEllul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Sociologue"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LeBluffTechno"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#TechEnjeuSiecle"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#AutoChoixTech"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#BluffTechnologique"/>
+        <rdfs:label xml:lang="fr">JacquesEllul</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#JaronLanier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#JaronLanier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Informaticien"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#YourNotGadget"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LockIn"/>
+        <rdfs:label xml:lang="fr">JaronLanier</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#JeanMarieHarribey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#JeanMarieHarribey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Economiste"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SourcesPrescription"/>
+        <rdfs:label xml:lang="fr">JeanMarieHarribey</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#KarlMarx -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#KarlMarx">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Philosophe"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Proletarisation"/>
+        <rdfs:label xml:lang="fr">KarlMarx</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LaRaisonGraph -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LaRaisonGraph">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre"/>
+        <contient rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#RaisonGraphique"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#JackGoody"/>
+        <aPourTitre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La Raison graphique</aPourTitre>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.leseditionsdeminuit.fr/livre-La_Raison_graphique-2096-1-1-0-1.html</estAccessibleA>
+        <paruEn rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">1979</paruEn>
+        <rdfs:label xml:lang="fr">LaRaisonGraph</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LeBluffTechno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LeBluffTechno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre"/>
+        <contient rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#BluffTechnologique"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#JacquesEllul"/>
+        <aPourTitre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le bluff technologique</aPourTitre>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.fayard.fr/pluriel/le-bluff-technologique-9782818502273</estAccessibleA>
+        <paruEn rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">1988</paruEn>
+        <rdfs:label xml:lang="fr">LeBluffTechno</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LesLudditesEnFr -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LesLudditesEnFr">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre"/>
+        <contient rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Technique"/>
+        <contient rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Technologie"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino"/>
+        <aPourTitre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Les Luddites en France</aPourTitre>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.lechappee.org/collections/frankenstein/les-luddites-en-france</estAccessibleA>
+        <paruEn rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">2010</paruEn>
+        <rdfs:label xml:lang="fr">LesLudditesEnFr</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LesMacroSystTech -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LesMacroSystTech">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre"/>
+        <contient rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#MacroSystemeTech"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#AlainGras"/>
+        <aPourTitre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Les macro-systèmes techniques</aPourTitre>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.puf.com/content/Les_Macro-syst%C3%A8mes_techniques</estAccessibleA>
+        <paruEn rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">1997</paruEn>
+        <rdfs:label xml:lang="fr">LesMacroSystTech</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LockIn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LockIn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan"/>
+        <estContenuDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#YourNotGadget"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#InertiesLeviers"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#JaronLanier"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le lock-in (dépendance au sentier) désigne un phénonmène de dépendance qui se crée à l&apos;égard d&apos;une solution technique adoptée (souvent sans conscience des impacts futurs), qui fait prévaloir le recours à certaines solutions techniques au détriment d&apos;autres auparavant envisageables. Ex : espacement des rails différent entre RER et métro rend impossible les connexions entre les eux.</estDefiniPar>
+        <rdfs:label xml:lang="fr">LockIn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#MacroSystemeTech -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#MacroSystemeTech">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SystemeTech"/>
+        <estContenuDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LesMacroSystTech"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#DispositifSocioTechnique"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Industrialisation"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Momentum"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Technologie"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#AlainGras"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ThomasParkeHughes"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Un macro-système technique regroupe l&apos;objet industriel, l&apos;oganisation et la distribution des flux et l&apos;entreprise de gestion commercial. Cette notion est proche de celle de système technique, avec ici une différence d&apos;échelle.</estDefiniPar>
+        <rdfs:label xml:lang="fr">MacroSystemeTechnique</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#MariePeze -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#MariePeze">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Psychologue"/>
+        <rdfs:label xml:lang="fr">MariePeze</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#MecreanceDiscred -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#MecreanceDiscred">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre"/>
+        <contient rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Proletarisation"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#BernardStiegler"/>
+        <aPourTitre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mécréance et Discrédit 1</aPourTitre>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.editions-galilee.fr/f/index.php?sp=liv&amp;livre_id=3091</estAccessibleA>
+        <paruEn rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">2004</paruEn>
+        <rdfs:label xml:lang="fr">MecreanceDiscred</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Mediasphère -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Mediasphère">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan"/>
+        <estContenuDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#CoursMedioGen"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Chronodynamisme"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#RegisDebray"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ensemble des media d’une époque donnée, qui caractérisent les principaux lieux et temporalités d’existence des phénomènes humains, notamment politiques. On peut en distinguer au moins quatre : logosphère (parole et écriture), graphosphère (imprimerie), vidéosphère (télévision), hypersphère (réseaux numériques).</estDefiniPar>
+        <rdfs:label xml:lang="fr">Mediasphere</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ModeExistObjTech -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ModeExistObjTech">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre"/>
+        <contient rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Concretisation"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GilbertSimondon"/>
+        <aPourTitre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Du Mode d&apos;existence des objets techniques</aPourTitre>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://editions.flammarion.com/Catalogue/philosophie-aubier/du-mode-dexistence-des-objets-techniques</estAccessibleA>
+        <paruEn rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">1958</paruEn>
+        <rdfs:label xml:lang="fr">ModeExistObjTech</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Momentum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Momentum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#MacroSystemeTech"/>
+        <estContenuDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#AmericanGen"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#InertiesLeviers"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ThomasParkeHughes"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inertie propre à un macro-sytème technique (MST), portée par des individus (acteurs du MST), des structures matérielles et des cadres juridico-politico-économiques, qui poussent à la pérennité et à la croissance du MST.</estDefiniPar>
+        <rdfs:label xml:lang="fr">Momentum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NemesisMedi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NemesisMedi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre"/>
+        <contient rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SeuilContreProd"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#IvanIllich"/>
+        <aPourTitre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Némésis médicale</aPourTitre>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://antilibraire.free.fr/le_fonds_de_l_antilibrairie__1088.htm</estAccessibleA>
+        <paruEn rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">1975</paruEn>
+        <rdfs:label xml:lang="fr">NemesisMedic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasPonchaut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasPonchaut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConstructCOP"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSHUSHIDST"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIConcreTechn"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIEcartPrescritReel"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIFctTravailler"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIFinOrgaColTrav"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIInertiesLeviers"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIProletari"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHISourcesPrescr"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHITendanceFaits"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Concretisation"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#DispositifSocioTechnique"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#EcartPrescritReel"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FinalOrgaCollTrav"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FonctionsDuTravailler"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#InertiesLeviers"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Proletarisation"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SourcesPrescription"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#TendanceFaits"/>
+        <rdfs:label xml:lang="fr">NicolasPonchaut</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasSalzmann -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasSalzmann">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConstructCOP"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#IngenieurAnalyseFct"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSHUSHIDST"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIConcreTechn"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIEcartPrescritReel"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIFctTravailler"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIFinOrgaColTrav"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIInertiesLeviers"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIProletari"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHISourcesPrescr"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHITendanceFaits"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Concretisation"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#DispositifSocioTechnique"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#EcartPrescritReel"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FinalOrgaCollTrav"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FonctionsDuTravailler"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#InertiesLeviers"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Proletarisation"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SourcesPrescription"/>
+        <construit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#TendanceFaits"/>
+        <rdfs:label xml:lang="fr">NicolasSalzmann</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#PierreBourdieu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#PierreBourdieu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Sociologue"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Habitus"/>
+        <rdfs:label xml:lang="fr">PierreBourdieu</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ProlegoHistTechn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ProlegoHistTechn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre"/>
+        <contient rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#DesajustementTK"/>
+        <contient rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SystemeTech"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#BertrandGille"/>
+        <aPourTitre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prolégomènes à une histoire des techniques</aPourTitre>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.gallimard.fr/Catalogue/GALLIMARD/Encyclopedie-de-la-Pleiade/Histoire-des-Techniques</estAccessibleA>
+        <paruEn rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">1978</paruEn>
+        <rdfs:label xml:lang="fr">ProlegoHistTech</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Proletarisation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Proletarisation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpAnalyse"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpInvent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpResti"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Grammatisation"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasPonchaut"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasSalzmann"/>
+        <estContenuDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#MecreanceDiscred"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#BernardStiegler"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#KarlMarx"/>
+        <estPresenteDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHIProletari"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Il désigne le processus de dépossession d’aptitudes, connaissances ou capacités d’un être humain, soit au profit de machines, soit au profit d’autres individus dans le cadre d’une nouvelle organisation du travail.</estDefiniPar>
+        <estUtilisePourAnalyse rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anticiper et limiter l’effet de prolétarisation, de perte de capacités, associé au nouveau dispositif / nouvelle organisation.</estUtilisePourAnalyse>
+        <rdfs:label xml:lang="fr">Proletarisation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#RaffaeleSimone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#RaffaeleSimone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Linguiste"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Exaptation"/>
+        <rdfs:label xml:lang="fr">RaffaeleSimone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#RaisonGraphique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#RaisonGraphique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan"/>
+        <estContenuDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LaRaisonGraph"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#JackGoody"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forme particulière de rationnalité produite par l&apos;écriture. Le syllogisme sont des procédés logiques qui n&apos;existent que dans les sociétés utilisant l&apos;écrirure. Ils permettent des opérations de pensée inédites. Jack Goody l&apos;oppose à la raison orale.</estDefiniPar>
+        <rdfs:label xml:lang="fr">RaisonGraphique</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#RegisDebray -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#RegisDebray">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Philosophe"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#CoursMedioGen"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Chronodynamisme"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#EffetJogging"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Mediasphère"/>
+        <rdfs:label xml:lang="fr">RegisDebray</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SeuilContreProd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SeuilContreProd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan"/>
+        <estContenuDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NemesisMedi"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#IvanIllich"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le seuil de contre-productivité désigne le niveau de développement au-delà duquel un dispositif socio-technique ou une institution produit l&apos;inverse de ce pour quoi il a été mis en place. Ex : l&apos;école productrice d&apos;ignorance, l&apos;hôpital producteur de maladies (nosocomiales), les transports producteurs de lenteur.</estDefiniPar>
+        <rdfs:label xml:lang="fr">SeuilDeContreProductivite</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SourcesPrescription -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SourcesPrescription">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpAnalyse"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpResti"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasPonchaut"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasSalzmann"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#JeanMarieHarribey"/>
+        <estPresenteDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHISourcesPrescr"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La prescription, en sciences du travail, désigne les tâches ou mission fixées à une personne. Elle peut portée sur les objectifs à atteindre, comme sur les moyens pour les réaliser, peut être informelle ou formelle. Il n&apos;y a de travail sans prescription.</estDefiniPar>
+        <rdfs:label xml:lang="fr">SourcesPrescription</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Spinoza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Spinoza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Philosophe"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConatusInstitu"/>
+        <rdfs:label xml:lang="fr">Spinoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SylvainAuroux -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SylvainAuroux">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Linguiste"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Grammatisation"/>
+        <rdfs:label xml:lang="fr">SylvainAuroux</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SystemeTech -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SystemeTech">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan"/>
+        <estContenuDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ProlegoHistTechn"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#AutoChoixTech"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#DispositifSocioTechnique"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Industrialisation"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#MacroSystemeTech"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#TendanceFaits"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#BertrandGille"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Un système technique désigne l&apos;ensemble des cohérences qui lient les techniques d&apos;une époque, qui constitue un stade plus ou moins durable de l&apos;évolution technique.</estDefiniPar>
+        <rdfs:label xml:lang="fr">SystemeTechnique</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#TechEnjeuSiecle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#TechEnjeuSiecle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre"/>
+        <contient rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#AutoChoixTech"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#JacquesEllul"/>
+        <aPourTitre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La Technique ou l&apos;enjeu du sicèle.</aPourTitre>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.economica.fr/livre-la-technique-ou-l-enjeu-du-siecle-ellul-jacques,fr,4,9782717815634.cfm</estAccessibleA>
+        <paruEn rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">1954</paruEn>
+        <rdfs:label xml:lang="fr">TechEnjeuSiecle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Technique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Technique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Transduction"/>
+        <estContenuDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LesLudditesEnFr"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Artisanat"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Exaptation"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Industrialisation"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Technologie"/>
+        <estOpposeA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Technologie"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La technique est à la fois savoir-faire et outils ; un ensemble de procédés informels et leur sédimentation instrumentale dans les objets produits par l&apos;être humain. La technique est en trandsuction avec l&apos;Homme : pas d&apos;humain sans technique et reciproquement.</estDefiniPar>
+        <rdfs:label xml:lang="fr">Technique</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Technologie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Technologie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Technique"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Transduction"/>
+        <estContenuDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LesLudditesEnFr"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Industrialisation"/>
+        <estOpposeA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Technique"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La technologie est l&apos;aliance des procédés scientifiques (savoir-faire artisanaux rationalisés, mis en science, mathématisés) ainsi que les macro-systèmes techniques. Elle est l&apos;application de la science à la technique. La technologie est en transduction avec l&apos;économie capitaliste comptemporaine.</estDefiniPar>
+        <rdfs:label xml:lang="fr">Technologie</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#TendanceFaits -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#TendanceFaits">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpAnalyse"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpInvent"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptOpPrise"/>
+        <estComprisGraceA rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#SystemeTech"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GuillaumeCarnino"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasPonchaut"/>
+        <estConstruitPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#NicolasSalzmann"/>
+        <estContenuDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#HommeMatiere"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#AndreLeroiGourhan"/>
+        <estPresenteDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FSUSHITendanceFaits"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La tendance désigne le déterminisme qui s&apos;exerce sur un objet technique qui se traduit par des objets (faits) forcément similaire puisqu&apos;il s&apos;agit de réponses à un même problème. Trois dimensions à ce déterminisme : anthropologique (besoins, fonctionnement du corps humain) ; lois de la nature ; le contexte technique (système technique) au sein duquel il s&apos;insère. Ex : Face au problème de la coupe du bois, la hache (à été crée et adoptée par tout type de soiété. Il y a eu une tendance à inventer partout cet objet (fait technique).</estDefiniPar>
+        <rdfs:label xml:lang="fr">TendanceFaits</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ThomasParkeHughes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ThomasParkeHughes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Historien"/>
+        <aEcrit rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#AmericanGen"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#MacroSystemeTech"/>
+        <pense rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Momentum"/>
+        <rdfs:label xml:lang="fr">ThomasParkeHughes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Transduction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Transduction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptArrierePlan"/>
+        <estContenuDans rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#IndiviInfosForme"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Exaptation"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Technique"/>
+        <estNecessPourCompre rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Technologie"/>
+        <estPensePar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#GilbertSimondon"/>
+        <estDefiniPar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La transduction désigne la co-évolution réciproque de deux termes qui ne pré-existent pas mais adviennent dans leur relation même. L&apos;un entraîne l&apos;évoltuion de l&apos;autre et inversement.</estDefiniPar>
+        <rdfs:label xml:lang="fr">Transduction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#TravailVivant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#TravailVivant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre"/>
+        <contient rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#EcartPrescritReel"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ChristopheDejours"/>
+        <aPourTitre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Travail vivant 2, travail et émancipation</aPourTitre>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.payot.ch/Detail/travail_vivant-christophe_dejours-9782228908405</estAccessibleA>
+        <paruEn rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">2013</paruEn>
+        <rdfs:label xml:lang="fr">TravailVivant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#YourNotGadget -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#YourNotGadget">
+        <rdf:type rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre"/>
+        <contient rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#LockIn"/>
+        <estEcritPar rdf:resource="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#JaronLanier"/>
+        <aPourTitre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">You are not a gadget</aPourTitre>
+        <estAccessibleA rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.goodreads.com/book/show/6683549-you-are-not-a-gadget</estAccessibleA>
+        <paruEn rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">2010</paruEn>
+        <rdfs:label xml:lang="fr">YourNotGadget</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Anthropologue"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Economiste"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Ethnologue"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Historien"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Informaticien"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#IngenieurAnalyseFct"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Linguiste"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Philosophe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Psychologue"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Sociologue"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Auteur"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#ConceptHutech"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Ressource"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#CompteRenduCours"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#FicheSUSHI"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/valentin/ontologies/2018/10/untitled-ontology-10#Livre"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
